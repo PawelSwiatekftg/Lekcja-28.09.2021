@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <script>
+        function sprawdzhaslo(form){
+            haslo1 = form.haslo.value;
+            haslo2 = form.haslo2.value;
+        
+            if (haslo1 == ''){
+                alert("Wpisz hasło");
+                return false;
+
+            }
+
+            else if (haslo2 == ''){
+                alert("Wpisz hasło");
+                return false;
+            }
+
+            else if (haslo1 == haslo2){
+                alert("Hasła się zgadzają");
+                return true;
+            }
+
+            else {
+                alert("Hasła się nie zgadzają\nWpisz je ponownie");
+                return false;
+            }
+
+        }
+        
+        </script>
+
+    <form onsubmit="return sprawdzhaslo(this)">
+Podaj Login <input type="text">
+<br>
+    
+Podaj Hasło <input type="password" id="haslo">
+    <br>
+    Powtórz Hasło <input type="password" id="haslo2">
+    <br>
+    <button name="resetuj" type="reset">wyczyść</button>
+    <button onclick="" name="wyślij" type="submit" id="wyslij">Sprawdź</button>
+
+</form>
+
+
+
+
+<script id="sprawdzanie_hasla">
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
